@@ -1,3 +1,24 @@
+# Public Rest API for Citex
+
+# General API Information
+* The base endpoint is: "https://api.citex.io/v1".
+* All endpoints return either a JSON object.
+* Any endpoint can return Empty list which cause request FAILED.
+```javascript
+[]
+```
+* For `GET` endpoints, parameters must be sent as a `string` or `int`.
+
+# LIMITS
+* All API request rate limit is `1 time/sec`. It will cause request failed if request more than 1 time/sec. `Suggestion:` Every time to request, make sure the response include right data.
+
+# OUTLOOK
+
+    1.ASSETS
+    2.TICKER
+    3.ORDERBOOK
+    4.TRADES
+
 # ENDPOINT 1
 
 ** **

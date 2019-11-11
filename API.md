@@ -2,7 +2,8 @@
 
 ** **
 
-##ASSETS
+### ASSETS
+
 https://api.citex.io/v1/market/assets
 
 The assets endpoint is to provide a detailed summary for each currency available on the exchange.
@@ -47,7 +48,8 @@ Assets response descriptions.
 
 # ENDPOINT 2
 
-##TICKER
+### TICKER
+
 https://api.citex.io/v1/market/ticker
 
 The ticker endpoint is to provide a 24-hour pricing and volume summary for each market pair available on the exchange.
@@ -84,7 +86,8 @@ Ticker response descriptions.
 
 # ENDPOINT 3
 
-##ORDERBOOK
+### ORDERBOOK
+
 https://api.citex.io/v1/market/orderbook/market_pair?market_pair=ETH_BTC&depth=10
 
 The order book endpoint is to provide a complete level 2 order book (arranged by best asks/bids) with full depth returned for a given market pair.
@@ -131,7 +134,8 @@ Order book response descriptions.
 
 # ENDPOINT 4
 
-##TRADES
+### TRADES
+
 https://api.citex.io/v1/market/trades/market_pair?market_pair=ETH_BTC&side=sell
 
 The trades endpoint is to return data on 50 recently completed trades for a given market pair.

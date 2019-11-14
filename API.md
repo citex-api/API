@@ -13,13 +13,37 @@
 * All API request rate limit is `1 time/sec`. It will cause request failed if request more than 1 time/sec. `Suggestion:` Every time to request, make sure the response include right data.
 
 # OUTLOOK
+    Summary Endpoint : Summary Exchange Infomation
+    Endpoint 1 : ASSETS
+    Endpoint 2 : TICKER
+    Endpoint 3 : ORDERBOOK
+    Endpoint 4 : TRADES
 
-    1.ASSETS
-    2.TICKER
-    3.ORDERBOOK
-    4.TRADES
 
-# ENDPOINT 1
+## SUMMARY ENDPOINT
+
+### Summary Exchange Infomation
+
+https://api.citex.co.kr/v1/exchangeInfo
+
+The overview of market data for all tickers.
+```javascript
+[
+    {
+        'symbol': 'eth_btc', 
+        'status': 'trading', 
+        'baseAsset': 'eth', 
+        'baseAssetPrecision': 3, 
+        'quoteAsset': 'btc', 
+        'quoteAssetPrecision': 6
+     }
+     ...
+]     
+```
+
+
+
+## ENDPOINT 1
 
 ** **
 
@@ -67,7 +91,7 @@ Assets response descriptions.
 | maker\_fee | string | Fees applied when liquidity is added to the order book. |
 | taker\_fee | string | Fees applied when liquidity is removed from the order book. |
 
-# ENDPOINT 2
+## ENDPOINT 2
 
 ### TICKER
 
@@ -105,7 +129,7 @@ Ticker response descriptions.
 
 
 
-# ENDPOINT 3
+## ENDPOINT 3
 
 ### ORDERBOOK
 
@@ -153,7 +177,7 @@ Order book response descriptions.
 | bids |   string | An array containing 2 elements. The offer price and quantity for each bid order. |
 | asks |   string | An array containing 2 elements. The ask price and quantity for each ask order. |
 
-# ENDPOINT 4
+## ENDPOINT 4
 
 ### TRADES
 

@@ -242,5 +242,5 @@ Parameters:
 ```
 
 Trades response descriptions.
-* List orders : [timestamp, open, high, low, close, volume]
+* List order : [timestamp, open, high, low, close, volume]
 * The first record in lists is the most recent data

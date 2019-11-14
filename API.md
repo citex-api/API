@@ -214,3 +214,32 @@ Trades response descriptions.
 | quote\_volume |   string | Transaction amount in quote pair volume. |
 | trade\_timestamp |   int | Unix timestamp in milliseconds for when the transaction occurred. |
 | type |   string | Used to determine whether or not the transaction originated as a buy or sell.   Buy – Identifies an ask was removed from the order book.   Sell – Identifies a bid was removed from the order book. |
+
+## ENDPOINT 5
+
+### CANDLESTICK
+
+https://api.citex.co.kr/v1/candles?symbol=eth_btc&type=1&size=10  (ETH-BTC's Candelstick Data for 1 min)
+
+
+Parameters:
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| symbol | string |  A pair such as &quot;ETH\_BTC&quot;. |
+| type(Optional) | string |  Default 1(1min). (1,3,5,15,30,60,120,240,360,1440). |
+| size(Optional) | string |  Default 10, no limit. |
+
+```javascript
+
+[
+    [
+        1569551400000, '0.020611', '0.020625', '0.020611', '0.020616', '29.804'
+    ]
+    ...
+]
+```
+
+Trades response descriptions.
+* List orders : [timestamp, open, high, low, close, volume]
+* The first record in lists is the most recent data

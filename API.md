@@ -18,6 +18,7 @@
     Endpoint 2 : TICKER
     Endpoint 3 : ORDERBOOK
     Endpoint 4 : TRADES
+    Endpoint 5 : CANDLESTICK
 
 
 ## SUMMARY ENDPOINT
